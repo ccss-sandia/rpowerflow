@@ -1,7 +1,7 @@
 RPowerFlow
 ==========
 
-This project WILL provide a steady-state electric power flow program written
+This project provides a steady-state electric power flow program written
 in Ruby, based off both the Ruby linalg and Ruby narray libraries.
 
 The program will provide both AC and DC solvers, and the AC solver will be
@@ -13,7 +13,34 @@ is a pure-Ruby linear algebra library. Neither are capable of handling sparse
 matrices, thus this project will have a limit as to how big of a power system
 it can handle.
 
-More to come...
+Current Status
+==============
+
+As of 04-21-2010, both the linalg and narray libraries are supported. Linalg is
+loaded first, and if that fails then narray is loaded. A Full Newton solver is
+implemented, and two tests exist.
+
+Requirements
+============
+
+Either the Ruby linalg or Ruby narray package is necessary (just one, not both).
+
+Ruby linalg is somewhat hard to install on later versions of Ubuntu since it
+relies on some Fortran libraries no longer provided in the repositories. One
+way around this is to download the required .deb file from the Debian Etch
+repository and force the install.
+
+Ruby narray can be installed as a gem.
+
+TODO
+====
+
+* Package as a gem and host gem on Rubygems
+* Check for expected methods on buses and branches as they are added to the system
+* Add a Decoupled Newton solver
+* Add a DC solver
+* Provide examples of more complex systems
+* Allow for enforcement of generator reactive power limits
 
 Legal Notice
 ============

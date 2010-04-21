@@ -13,6 +13,17 @@ is a pure-Ruby linear algebra library. Neither are capable of handling sparse
 matrices, thus this project will have a limit as to how big of a power system
 it can handle.
 
+Installation
+============
+
+RPowerFlow can be installed via RubyGems by running the following command:
+
+    $> gem install rpowerflow
+
+This will install the narray gem as well, but will not install the linalg
+library. See the "Requirements" section below for information about installing
+the linalg library.
+
 Current Status
 ==============
 
@@ -35,7 +46,6 @@ Ruby narray can be installed as a gem.
 TODO
 ====
 
-* Package as a gem and host gem on Rubygems
 * Check for expected methods on buses and branches as they are added to the system
 * Add a Decoupled Newton solver
 * Add a DC solver

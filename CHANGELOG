@@ -1,0 +1,8 @@
+RPowerFlow CHANGELOG
+
+VERSION 0.5.1
+ * Removed reference to a RubyForge project from the Gemspec.
+ * Included this CHANGELOG file in the gem.
+
+VERSION 0.5.0
+ * Initial version of project when provided via open source.
